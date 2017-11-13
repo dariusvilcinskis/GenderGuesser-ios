@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Udh-No-D2f">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,18 +15,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GenderGuesser_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2YJ-Em-zVB">
-                                <rect key="frame" x="8" y="350.5" width="359" height="30"/>
+                                <rect key="frame" x="8" y="223" width="304" height="30"/>
                                 <color key="backgroundColor" red="0.5" green="0.93756827380922103" blue="0.8723900450600518" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlS-KO-cXz">
-                                <rect key="frame" x="155" y="388" width="64" height="30"/>
+                                <rect key="frame" x="128" y="261" width="64" height="30"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
                                     <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEx-Wv-aVg"/>
@@ -35,11 +35,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.38431372549019605" green="0.7803921568627451" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2YJ-Em-zVB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Aqn-cu-3UB"/>
                             <constraint firstItem="jlS-KO-cXz" firstAttribute="top" secondItem="2YJ-Em-zVB" secondAttribute="bottom" constant="7.5" id="cMr-XZ-Ubn"/>
                             <constraint firstItem="jlS-KO-cXz" firstAttribute="centerX" secondItem="2YJ-Em-zVB" secondAttribute="centerX" id="j5E-nP-Nbp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2YJ-Em-zVB" secondAttribute="trailing" constant="8" id="pXF-Gt-nNi"/>
                             <constraint firstItem="2YJ-Em-zVB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="qqT-K3-r1I"/>
+                            <constraint firstItem="2YJ-Em-zVB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="159" id="ymu-sZ-Spk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -58,18 +58,18 @@
             <objects>
                 <viewController id="Na2-d2-BRX" customClass="ResultsViewController" customModule="GenderGuesser_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Szz-4P-kHB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5P3-FV-rOe">
-                                <rect key="frame" x="8" y="82" width="359" height="403"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5P3-FV-rOe">
+                                <rect key="frame" x="8" y="114.5" width="304" height="403"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="man" translatesAutoresizingMaskIntoConstraints="NO" id="4Gh-ze-pZP">
-                                        <rect key="frame" x="0.0" y="0.0" width="220" height="403"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="male" translatesAutoresizingMaskIntoConstraints="NO" id="4Gh-ze-pZP">
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="403"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="98%" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjX-dE-PiB">
-                                        <rect key="frame" x="220" y="159.5" width="139" height="84"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                        <rect key="frame" x="156" y="174.5" width="148" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -79,8 +79,8 @@
                         <color key="backgroundColor" red="0.38302713632583618" green="0.78194218873977661" blue="0.75905454158782959" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eci-80-Ysl" firstAttribute="trailing" secondItem="5P3-FV-rOe" secondAttribute="trailing" constant="8" id="6xY-Ni-vRd"/>
+                            <constraint firstItem="5P3-FV-rOe" firstAttribute="centerY" secondItem="eci-80-Ysl" secondAttribute="centerY" id="AwQ-ZM-WhU"/>
                             <constraint firstItem="5P3-FV-rOe" firstAttribute="leading" secondItem="eci-80-Ysl" secondAttribute="leading" constant="8" id="Bho-Hu-44f"/>
-                            <constraint firstItem="5P3-FV-rOe" firstAttribute="top" secondItem="eci-80-Ysl" secondAttribute="top" constant="18" id="Smr-4I-uHA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eci-80-Ysl"/>
                     </view>
@@ -99,7 +99,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Udh-No-D2f" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="91c-74-hlx">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -113,6 +113,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="man" width="175" height="403"/>
+        <image name="male" width="175" height="403"/>
     </resources>
 </document>

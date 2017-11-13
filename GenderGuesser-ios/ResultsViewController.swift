@@ -20,22 +20,32 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        guard genderModel != nil, genderModel?.gender != "unknown" else {
-            percentage.text = ":("
-            genderImage.image = UIImage(named: "question_mark")
+        guard genderModel != nil else {
+            setFailingValues()
+            return
+        }
+        
+        guard genderModel?.gender != nil else {
+            setFailingValues()
             return
         }
         
         switch (genderModel?.gender)! {
         case "male":
             genderImage.image = UIImage(named: "male")
+            percentage.text = "\(((genderModel?.probability)! * 100).description)%"
         case "female":
             genderImage.image = UIImage(named: "female")
+            percentage.text = "\(((genderModel?.probability)! * 100).description)%"
         default:
             genderImage.image = UIImage(named: "question_mark")
+            percentage.text = ":("
         }
-        
-        percentage.text = "\(((genderModel?.probability)! * 100).description)%"
+    }
+    
+    private func setFailingValues() {
+        percentage.text = ":("
+        genderImage.image = UIImage(named: "question_mark")
     }
 
     override func didReceiveMemoryWarning() {
