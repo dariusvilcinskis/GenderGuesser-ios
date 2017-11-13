@@ -13,6 +13,9 @@
 		69EB76CB1FB77B1600650F4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69EB76CA1FB77B1600650F4C /* Assets.xcassets */; };
 		69EB76CE1FB77B1600650F4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69EB76CC1FB77B1600650F4C /* LaunchScreen.storyboard */; };
 		69EB76D91FB77B1700650F4C /* GenderGuesser_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EB76D81FB77B1700650F4C /* GenderGuesser_iosTests.swift */; };
+		69EB76E41FB8BEB500650F4C /* GenderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EB76E31FB8BEB500650F4C /* GenderClient.swift */; };
+		69EB76E61FB8BF0F00650F4C /* GenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EB76E51FB8BF0F00650F4C /* GenderModel.swift */; };
+		69EB76E81FB9B73D00650F4C /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EB76E71FB9B73D00650F4C /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		69EB76D41FB77B1700650F4C /* GenderGuesser-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GenderGuesser-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69EB76D81FB77B1700650F4C /* GenderGuesser_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderGuesser_iosTests.swift; sourceTree = "<group>"; };
 		69EB76DA1FB77B1700650F4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69EB76E31FB8BEB500650F4C /* GenderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderClient.swift; sourceTree = "<group>"; };
+		69EB76E51FB8BF0F00650F4C /* GenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderModel.swift; sourceTree = "<group>"; };
+		69EB76E71FB9B73D00650F4C /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 			children = (
 				69EB76C31FB77B1600650F4C /* AppDelegate.swift */,
 				69EB76C51FB77B1600650F4C /* ViewController.swift */,
+				69EB76E31FB8BEB500650F4C /* GenderClient.swift */,
+				69EB76E51FB8BF0F00650F4C /* GenderModel.swift */,
+				69EB76E71FB9B73D00650F4C /* ResultsViewController.swift */,
 				69EB76C71FB77B1600650F4C /* Main.storyboard */,
 				69EB76CA1FB77B1600650F4C /* Assets.xcassets */,
 				69EB76CC1FB77B1600650F4C /* LaunchScreen.storyboard */,
@@ -201,6 +210,9 @@
 			files = (
 				69EB76C61FB77B1600650F4C /* ViewController.swift in Sources */,
 				69EB76C41FB77B1600650F4C /* AppDelegate.swift in Sources */,
+				69EB76E61FB8BF0F00650F4C /* GenderModel.swift in Sources */,
+				69EB76E81FB9B73D00650F4C /* ResultsViewController.swift in Sources */,
+				69EB76E41FB8BEB500650F4C /* GenderClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
