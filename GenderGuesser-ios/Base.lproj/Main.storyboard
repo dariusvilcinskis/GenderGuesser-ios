@@ -62,13 +62,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5P3-FV-rOe">
-                                <rect key="frame" x="8" y="114.5" width="304" height="403"/>
+                                <rect key="frame" x="8" y="72" width="304" height="488"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="male" translatesAutoresizingMaskIntoConstraints="NO" id="4Gh-ze-pZP">
-                                        <rect key="frame" x="0.0" y="0.0" width="148" height="403"/>
+                                        <rect key="frame" x="0.0" y="42.5" width="148" height="403"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="98%" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjX-dE-PiB">
-                                        <rect key="frame" x="156" y="174.5" width="148" height="54"/>
+                                        <rect key="frame" x="156" y="217" width="148" height="54"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -78,9 +78,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.38302713632583618" green="0.78194218873977661" blue="0.75905454158782959" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="5P3-FV-rOe" firstAttribute="top" secondItem="eci-80-Ysl" secondAttribute="top" constant="8" id="1yK-de-8w0"/>
                             <constraint firstItem="eci-80-Ysl" firstAttribute="trailing" secondItem="5P3-FV-rOe" secondAttribute="trailing" constant="8" id="6xY-Ni-vRd"/>
-                            <constraint firstItem="5P3-FV-rOe" firstAttribute="centerY" secondItem="eci-80-Ysl" secondAttribute="centerY" id="AwQ-ZM-WhU"/>
                             <constraint firstItem="5P3-FV-rOe" firstAttribute="leading" secondItem="eci-80-Ysl" secondAttribute="leading" constant="8" id="Bho-Hu-44f"/>
+                            <constraint firstItem="eci-80-Ysl" firstAttribute="bottom" secondItem="5P3-FV-rOe" secondAttribute="bottom" constant="8" id="MMz-oJ-RKm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eci-80-Ysl"/>
                     </view>
