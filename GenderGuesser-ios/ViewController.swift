@@ -18,15 +18,13 @@ class ViewController: UIViewController {
     
     //MARK: actions
     @IBAction func calculatePressed(_ sender: UIButton) {
-        var gc = GenderClient()
-        gc.getGender(name: nameTextField.text!, respon: Show)
+        let gc = GenderClient()
+        gc.getGender(name: nameTextField.text!, response: ShowResults)
     }
     
-    func Show (genderModel: GenderModel) -> String {
+    func ShowResults (genderModel: GenderModel) {
         self.genderModel = genderModel
         performSegue(withIdentifier: "mySegueID", sender: nil)
-
-        return ""
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

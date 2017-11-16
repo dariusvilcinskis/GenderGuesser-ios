@@ -9,17 +9,27 @@
 import Foundation
 
 class GenderClient {
-    func getGender (name: String, respon: (GenderModel) -> String) {
+    func getGender (name: String, response: (GenderModel) -> Void) {
         let url = URL(string: "https://api.genderize.io/?name=\(name)")
+        
         do {
             let jsonData = try Data(contentsOf: url!)
         
-        
             let jsonDecoder = JSONDecoder()
             let users = try? jsonDecoder.decode(GenderModel.self, from: jsonData)
-            respon(users as! GenderModel)
+            
+            guard let responseModel = users as GenderModel? else {
+                raiseUnknownGender(response: response)
+                return
+            }
+            
+            response(responseModel)
         } catch {
-            respon(GenderModel(name: "", gender: "unknown", probability: 0, count: 0))
+            raiseUnknownGender(response: response)
         }
+    }
+    
+    func raiseUnknownGender(response: (GenderModel) -> Void) {
+        response(GenderModel(name: "", gender: "unknown", probability: 0, count: 0))
     }
 }
